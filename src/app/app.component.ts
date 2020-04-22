@@ -17,4 +17,32 @@ export class AppComponent  {
     homepass(){
       this.router.navigate(['/home',3]);
     }
+    
+    itemNama=[];
+    itemPenjelasan=[];
+    itembuah= [{
+    nama:'kelengkeng',
+    harga:10000
+  },{
+    nama:'jeruk',
+    harga:7000
+
+  }];
+
+    itemJurusan= [{
+    nama:'Informatika',
+    penjelasan:'Komputer'
+  },{
+    nama:'Ekonomi',
+    penjelasan:'Money'
+
+  }];
+
+    Submit(x,y){
+        this.itemNama.push(x);
+        this.itemPenjelasan.push(y);
+    }
+    
+
+    
 }

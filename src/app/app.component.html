@@ -9,4 +9,8 @@
     <button (click)="homepass()">Home3</button>
 </div>
 
+<div *ngFor="let Jurusan of itemJurusan; let i=index">
+  {{i+1}}.{{Jurusan.nama}}-{{Jurusan.penjelasan}}
+</div>
+
 <router-outlet></router-outlet>
