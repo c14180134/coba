@@ -8,6 +8,7 @@ import { HomeComponent } from './home/home.component';
 import { Home2Component } from './home2/home2.component';
 import { Routes, RouterModule } from '@angular/router';
 import { Home3Component } from './home3/home3.component';
+import { GlobalService } from './global.service';
 
 const ROUTES : Routes =[
   
@@ -24,7 +25,8 @@ const ROUTES : Routes =[
      ],
 
   declarations: [ AppComponent, HelloComponent, HomeComponent, Home2Component, Home3Component ],
-  bootstrap:    [ AppComponent ]
+  bootstrap:    [ AppComponent ],
+  providers: [GlobalService]
 })
 
 
