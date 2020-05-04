@@ -21,7 +21,7 @@ export class HomeComponent implements OnInit {
   }
   Submit(x:string,y:string){
       this.datatambah={
-        no : x,
+        nama : x,
         penjelasan : y,
       }
       this.datadariglob.push(this.datatambah);

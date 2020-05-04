@@ -23,7 +23,7 @@ export class AppComponent  {
       this.router.navigate(['/home2']);
     }
     homepass(){
-      this.router.navigate(['/home',3]);
+      this.router.navigate(['/home3']);
     }
   Submit(x:string,y:string){
       let temp1=x;
