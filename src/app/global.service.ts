@@ -20,6 +20,9 @@ export class GlobalService {
   public add(temp){
      this.Jurusan.push(temp);
   }
+  public setData(databaru){
+    this.Jurusan = databaru;
+  }
 
 
 }

@@ -14,7 +14,8 @@ const ROUTES : Routes =[
   
  {path:'home/:id', component: HomeComponent},
  {path:'home', component: HomeComponent},
- {path:'home2', component: Home2Component} 
+ {path:'home2', component: Home2Component},
+ {path:'home3',component:Home3Component} 
 ]
 
 @NgModule({

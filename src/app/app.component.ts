@@ -19,6 +19,9 @@ export class AppComponent  {
     this.datadariglob=this.knt.getdata();
     
   }
+    home(){
+      this.router.navigate(['/home']);
+    }
     home2(){
       this.router.navigate(['/home2']);
     }
