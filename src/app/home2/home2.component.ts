@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { GlobalService} from '../global.service'
 
 @Component({
   selector: 'app-home2',
@@ -7,10 +8,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class Home2Component implements OnInit {
 
-  constructor() { }
-
+  constructor(public knt:GlobalService) { }
+  datadariglob=[]
+  
   ngOnInit() {
-    
+    this.datadariglob=this.knt.getdata();
   }
+  
 
 }

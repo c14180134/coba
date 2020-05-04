@@ -25,20 +25,11 @@ export class AppComponent  {
     homepass(){
       this.router.navigate(['/home',3]);
     }
-
-   
-
-
-
-    Submit(x:string,y:string){
+  Submit(x:string,y:string){
       let temp1=x;
       let temp2=y;
       let temp=[temp1,temp2];
       this.knt.add(temp);
     }
-    
-
-    
-
-    
+   
 }
