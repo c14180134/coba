@@ -4,7 +4,7 @@ import { Injectable } from '@angular/core';
 export class GlobalService {
 
   constructor() { }
-   public itemJurusan= [{
+   public Jurusan= [{
     nama:'Informatika',
     penjelasan:'Komputer'
   },{
@@ -14,11 +14,11 @@ export class GlobalService {
   }];
 
   public getdata(){
-    return this.itemJurusan;
+    return this.Jurusan;
   }
 
-  public add(x,y){
-    
+  public add(temp){
+     this.Jurusan.push(temp);
   }
 
 
